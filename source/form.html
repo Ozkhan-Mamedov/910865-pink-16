@@ -7,53 +7,56 @@
   <body>
     <header class="page-header">
       <nav class="main-navigation">
-        <a class="main-navigation__logo">
-          <img class="main-navigation__logo-image" src="#" width="75" height="22" alt="Логотип Pink">
-        </a>
-      <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Закрыть меню</span></button>
-      <ul class="main-navigation__list site-list">
-        <li class="site-list__item">
-          <a href="index.html">Главная</a>
-        </li>
-        <li class="site-list__item">
-          <a href="photo.html">Фотографии</a>
-        </li>
-        <li class="site-list__item">
-          <a>Конкурс</a>
-        </li>
-        <li class="site-list__item">
-          <a href="#">HTML Academy</a>
-        </li>
-      </ul>
+        <div class="logo-container">
+          <a href="index.html" class="logo-container__link">
+            <img class="logo-container__image" src="#" width="147" height="40" alt="Логотип Пинк">
+          </a>
+        </div>
+        <button class="main-navigation__menu-toggle" type="button"><span class="visually-hidden">Закрыть меню</span></button>
+        <ul class="main-navigation__list header-list">
+          <li class="header-list__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="header-list__item">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="header-list__item">
+            <a>Конкурс</a>
+          </li>
+          <li class="header-list__item">
+            <a href="#">HTML Academy</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main>
-        <div class="main-background inner-background">
-          <h1 class="main-background__header">
-            Конкурс на&nbsp;самое безбашенное путешествие с&nbsp;Пинк
-          </h1>
-        </div>
+      <div class="page-top inner-background">
+        <h1 class="page-top__header">
+          Конкурс на&nbsp;самое безбашенное путешествие с&nbsp;Пинк
+        </h1>
+      </div>
     </main>
     <footer>
-      <div class="footer-logo-container">
-        <img src="#" width="59" height="40" alt="Логотип Pink">
-        <img src="#" width="74" height="23" alt="">
+      <div class="logo-container">
+        <a href="index.html" class="logo-container__link">
+          <img class="logo-container__image" src="#" width="147" height="40" alt="Логотип Пинк">
+        </a>
       </div>
-      <ul class="footer-socials">
-        <li class="footer-socials__item">
-          <a class="footer-socials__button social-twitter" href="#"><span class="visually-hidden">Twitter</span></a>
+      <ul class="socials">
+        <li class="socials__item">
+          <a class="socials__button social-twitter" href="#"><span class="socials__description">Twitter</span></a>
         </li>
-        <li class="footer-socials__item">
-          <a class="footer-socials__button social-facebook" href="#"><span class="visually-hidden">Facebook</span></a>
+        <li class="socials__item">
+          <a class="socials__button social-facebook" href="#"><span class="socials__description">Facebook</span></a>
         </li>
-        <li class="footer-socials__item">
-          <a class="footer-socials__button social-youtube" href="#"><span class="visually-hidden">Youtube</span></a>
+        <li class="socials__item">
+          <a class="socials__button social-youtube" href="#"><span class="socials__description">Youtube</span></a>
         </li>
       </ul>
       <p class="footer-copy">
         Разработано
         <a class="footer-copy__logo-container" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="visually-hidden">HTML Academy</span>
+          <span class="footer-copy__logo-description">HTML Academy</span>
           <img src="#" width="27" height="34" alt="Логотип HTML Academy">
         </a>
       </p>
