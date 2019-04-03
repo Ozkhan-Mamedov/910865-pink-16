@@ -7,12 +7,12 @@
   <body>
     <header class="page-header">
       <nav class="main-navigation">
-        <div class="logo-container">
-          <a href="index.html" class="logo-container__link">
-            <img class="logo-container__image" src="#" width="147" height="40" alt="Логотип Пинк">
+        <div class="main-navigation__logo-container">
+          <a href="index.html" class="main-navigation__link">
+            <img class="main-navigation__image" src="#" width="147" height="40" alt="Логотип Пинк">
           </a>
+          <button class="main-navigation__menu-toggle" type="button"><span class="visually-hidden">Закрыть меню</span></button>
         </div>
-        <button class="main-navigation__menu-toggle" type="button"><span class="visually-hidden">Закрыть меню</span></button>
         <ul class="main-navigation__list header-list">
           <li class="header-list__item">
             <a href="index.html">Главная</a>
@@ -37,26 +37,24 @@
       </div>
     </main>
     <footer>
-      <div class="logo-container">
-        <a href="index.html" class="logo-container__link">
-          <img class="logo-container__image" src="#" width="147" height="40" alt="Логотип Пинк">
-        </a>
-      </div>
+      <a href="index.html">
+        <img src="#" width="147" height="40" alt="Логотип Пинк">
+      </a>
       <ul class="socials">
         <li class="socials__item">
-          <a class="socials__button social-twitter" href="#"><span class="socials__description">Twitter</span></a>
+          <a class="socials__button socials__button--twitter" href="#"><span class="socials__description">Twitter</span></a>
         </li>
         <li class="socials__item">
-          <a class="socials__button social-facebook" href="#"><span class="socials__description">Facebook</span></a>
+          <a class="socials__button socials__button--facebook" href="#"><span class="socials__description">Facebook</span></a>
         </li>
         <li class="socials__item">
-          <a class="socials__button social-youtube" href="#"><span class="socials__description">Youtube</span></a>
+          <a class="socials__button socials__button--youtube" href="#"><span class="socials__description">Youtube</span></a>
         </li>
       </ul>
       <p class="footer-copy">
         Разработано
         <a class="footer-copy__logo-container" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="footer-copy__logo-description">HTML Academy</span>
+          HTML Academy
           <img src="#" width="27" height="34" alt="Логотип HTML Academy">
         </a>
       </p>
