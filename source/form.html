@@ -41,6 +41,108 @@
           Конкурс на&nbsp;самое безбашенное путешествие с&nbsp;Пинк
         </h1>
       </div>
+      <section class="form-container">
+        <p class="form-container__description">
+            Поделитесь своей историей и&nbsp;получите шанс выиграть ценный приз&nbsp;&mdash; 1000 миль на&nbsp;вашу бонусную карту! Пожалуйста, заполните форму ниже:
+        </p>
+        <form class="form" action="https://echo.htmlacademy.ru" method="GET">
+          <fieldset class="form__personal-name">
+            <div class="form__personal-name-wrapper">
+              <ul class="form_personal-name-list">
+                <li class="form__personal-name-item">
+                  <label for="second-name-id">Фамилия:</label>
+                  <input id="second-name-id" name="second-name" type="text" placeholder="Укажите фамилию *">
+                </li>
+                <li class="form__personal-name-item">
+                  <label for="first-name-id">Имя:</label>
+                  <input id="first-name-id" name="first-name" type="text" placeholder="Введите ваше имя *">
+                </li>
+                <li class="form__personal-name-item">
+                  <label for="patronymic-id">Отчество:</label>
+                  <input id="patronymic-id" name="patronymic" type="text" placeholder="Ну&nbsp;и&nbsp;отчество тоже">
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+          <fieldset class="form__achievments">
+            <legend class="form__achievments-header">Ваши безбашенные достижения в&nbsp;путешествии</legend>
+            <div class="form__achievments-wrapper">
+              <ul class="form__achievments-list">
+                <li class="form__achievments-item">
+                  <input id="achievment-1-id" name="achievment-1" type="checkbox" checked>
+                  <label for="achievment-1-id">Сделал селфи с&nbsp;акулой</label>
+                </li>
+                <li class="form__achievments-item">
+                  <input id="achievment-2-id" name="achievment-2" type="checkbox" checked>
+                  <label for="achievment-2-id">Обгорел на&nbsp;пляже</label>
+                </li>
+                <li class="form__achievments-item">
+                  <input id="achievment-3-id" name="achievment-3" type="checkbox">
+                  <label for="achievment-3-id">Видел Чака Норриса</label>
+                </li>
+                <li class="form__achievments-item">
+                  <input id="achievment-4-id" name="achievment-4" type="checkbox">
+                  <label for="achievment-4-id">Накупил сувениров</label>
+                </li>
+                <li class="form__achievments-item">
+                  <input id="achievment-5-id" name="achievment-5" type="checkbox" checked>
+                  <label for="achievment-5-id">Удержал башню</label>
+                </li>
+                <li class="form__achievments-item">
+                  <input id="achievment-6-id" name="achievment-6" type="checkbox">
+                  <label for="achievment-6-id">Разгромил отель</label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+          <fieldset class="form__contacts">
+            <legend class="form__contacts-header">Контактная информация</legend>
+            <div class="form__contacts-wrapper">
+              <ul class="form__contacts-list">
+                <li class="form__contacts-item">
+                  <label for="number-id">Номер телефона</label>
+                  <input id="number-id" name="number" type="text" placeholder="Номер, пожалуйста">
+                </li>
+                <li class="form__contacts-item">
+                  <label for="adress-id">Адрес почты</label>
+                  <input id="adress-id" name="adress" type="text" placeholder="Введите почту *">
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+          <fieldset class="form__platform">
+            <legend class="form__platform-header">С&nbsp;каким приложением путешествовали?</legend>
+            <div class="form__platform-wrapper">
+              <ul class="form__platform-list">
+                <li class="form__platform-item">
+                  <input id="ios-id" name="platform-type" type="radio" name="platform" checked>
+                  <label for="ios-id">Pink для iOS</label>
+                </li>
+                <li class="form__platform-item">
+                  <input id="android-id" name="platform-type" type="radio" name="platform">
+                  <label for="android-id">Pink на&nbsp;Android</label>
+                </li>
+                <li class="form__platform-item">
+                  <input id="windows-id" name="platform-type" type="radio" name="platform">
+                  <label for="windows-id">Windows Phone</label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+          <fieldset class="form__details">
+            <legend class="form__details-header">Опишите свои эмоции</legend>
+            <div class="form__details-wrapper">
+              <textarea resize="none">Можно прям в&nbsp;красках, не&nbsp;стесняясь в&nbsp;выражениях</textarea>
+            </div>
+          </fieldset>
+          <div class="form__submit">
+            <button class="form__submit-button" type="submit">Отправить форму</button>
+            <p>
+              <span>*</span> &mdash; обязательные поля
+            </p>
+          </div>
+        </form>
+      </section>
     </main>
     <footer class="page-footer">
       <a class="logo" href="index.html">
