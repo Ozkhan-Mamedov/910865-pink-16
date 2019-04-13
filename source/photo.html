@@ -44,7 +44,7 @@
       <p class="sub-title">
         Взгляните на&nbsp;фотографии, которые выкладывают пользователи! Видите, как не&nbsp;хватает ваших?
       </p>
-      <section>
+      <section class="photo-card-container">
         <article class="top-panorama">
           <span class="top-panorama__label">Панорама дня</span>
           <img class="top-panorama__image" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Картинка панорамы">
@@ -201,6 +201,10 @@
           </div>
         </article>
       </section>
+      <p class="form-sub-title">
+        Затмите их&nbsp;всех!<br>
+        Выкладывайте все, что накопилось в&nbsp;телефоне!
+      </p>
       <form class="filter" action="https://echo.htmlacademy.ru" method="POST">
         <img class="filter__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Картинка 7">
         <div class="filter__controls">
@@ -213,8 +217,8 @@
           </div>
         </div>
         <div class="filter__button">
-          <button type="button">Запостить</button>
-          <button type="button">Отмена</button>
+          <button class="filter__post-button" type="button">Запостить</button>
+          <button class="filter__cancel-button" type="button">Отмена</button>
         </div>
       </form>
     </main>
