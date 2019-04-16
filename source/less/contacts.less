@@ -1,8 +1,8 @@
 .contacts {
   padding-top: 53px;
   //padding-bottom: 243px;
-  padding-left: 49px;
-  padding-right: 49px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .contacts__header {
@@ -12,12 +12,15 @@
 
   font-size: 24px;
   line-height: 30px;
+  text-align: center;
 }
 
 .contacts__item {
   margin: 0;
   padding: 0;
   margin-bottom: 35px;
+
+  text-align: center;
 }
 
 .contacts__item-header {
@@ -26,13 +29,21 @@
 
   font-size: 18px;
   font-weight: bold;
-  text-align: center;
 }
 
 .contacts__detail {
-  display: block;
-
   font-size: 24px;
   color: #d22856;
-  text-align: center;
+
+  &:hover {
+    color: #283645;
+
+    border-bottom: 2px solid #283645;
+  }
+
+  &:active {
+    color: #283645;
+
+    opacity: 0.3;
+  }
 }

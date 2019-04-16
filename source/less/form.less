@@ -41,6 +41,16 @@
 
   border: 2px solid #e7e7e7;
   border-radius: 2px;
+
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:focus {
+    border-color: #d22856;
+
+    outline: none;
+  }
 }
 
 .form__patronymic-input {
@@ -146,6 +156,16 @@
   &::placeholder {
     color: #283645;
   }
+
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:focus {
+    border-color: #d22856;
+
+    outline: none;
+  }
 }
 
 .form__platform {
@@ -227,6 +247,16 @@
     border-radius: 2px;
 
     resize: none;
+
+    &:hover {
+      border-color: #283645;
+    }
+
+    &:focus {
+      border-color: #d22856;
+
+      outline: none;
+    }
   }
 }
 
@@ -249,6 +279,19 @@
     background-color: #2aab6d;
     border: 0;
     border-radius: 2px;
+
+    &:hover,
+    &:focus {
+      background-color: #1c9b5e;
+    }
+
+    &:active  {
+      color: #61b98f;
+    }
+
+    &:disabled {
+      background-color: #e5e5e5;
+    }
   }
 
   &-description {
