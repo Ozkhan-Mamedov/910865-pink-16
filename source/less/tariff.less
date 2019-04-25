@@ -6,8 +6,8 @@
   //height: 375px;
 
   background: url("../img/bg-triangle-white.svg") no-repeat;
-  background-size: 250%;
-  background-position: 0 -18px;
+  background-size: 100%;
+  background-position: top;
   background-color: #f2f2f2;
 
   overflow: hidden;
@@ -15,11 +15,14 @@
 
 .tariff__table {
   position: absolute;
-  left: -258px;
+  //left: -258px;
+  left: 50%;
 
   //margin-bottom: 40px;
 
   border-collapse: collapse;
+
+  transform: translateX(-50%);
 }
 
 .tariff__option,
@@ -28,6 +31,8 @@
 }
 
 .tariff__option {
+  position: relative;
+
   padding-left: 82px;
   padding-right: 82px;
   padding-top: 22px;
@@ -40,6 +45,16 @@
 
   background-color: #283645;
   border-top: 0;
+  border-bottom-color: #283645;
+  border-bottom-width: 2px;
+
+  &:nth-child(1) {
+    border-left-color: #283645;
+  }
+
+  &:nth-child(3) {
+    border-right-color: #283645;
+  }
 }
 
 .tariff__price {
@@ -56,6 +71,8 @@
   padding-top: 12px;
   padding-right: 16px;
   padding-bottom: 12px;
+
+  background-color: #ffffff;
 }
 
 .tariff__features {
@@ -63,4 +80,16 @@
   line-height: 30px;
 
   text-transform: uppercase;
+}
+
+.tariff__image-yes {
+  float: right;
+
+  padding-top: 4.5px;
+}
+
+.tariff__image-no {
+  float: right;
+
+  padding-top: 2px;
 }
