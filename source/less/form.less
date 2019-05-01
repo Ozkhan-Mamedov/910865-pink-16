@@ -431,6 +431,14 @@
 
       content: "";
     }
+
+    &:hover::before {
+      border-color: #283645;
+    }
+
+    &:active::before {
+      border-color: #d22856;
+    }
   }
 
   &-input--checkbox:checked + label::before {
@@ -443,6 +451,20 @@
     background: url("../img/radio.png") no-repeat;
     background-position: 50% 50%;
     background-color: #ffffff;
+  }
+
+  &-input:focus + label {
+    outline: 2px solid rgb(125, 173, 217);
+
+    &::before {
+      border-color: #283645;
+    }
+  }
+
+// не работает c &-input--radio:active
+// при нажатии на пробел рамка окрашивается и не меняет цвет обратно при снятии нажатия с пробела
+  &-input--checkbox:active + label::before {
+    border-color: #d22856;
   }
 }
 
