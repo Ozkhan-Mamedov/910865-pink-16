@@ -1,0 +1,19 @@
+.hit {
+  background: url("../img/bg-hit.svg") no-repeat;
+  background-size: 70px 70px;
+  background-position: 0 top;
+  background-color: #283645;
+
+  &::after {
+    content: "ХИТ";
+
+    position: absolute;
+    top: 12px;
+    left: 9px;
+
+    font-size: 14px;
+    line-height: 30px;
+
+    transform: rotate(-45deg);
+  }
+}
