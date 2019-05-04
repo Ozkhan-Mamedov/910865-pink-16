@@ -1,7 +1,24 @@
 .index-background {
+  position: relative;
+
   height: 395px;
 
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
   background-size: cover;
   background-position: 0 100%;
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    width: 258px;
+    height: 287px;
+
+    background: url("../img/iphone-hand-mobile@1x.png") no-repeat;
+
+    transform: translateX(-50%);
+
+    content: "";
+  }
 }
