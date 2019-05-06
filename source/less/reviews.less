@@ -16,11 +16,16 @@
 
 .reviews__item {
   display: none;
-  padding-left: 17px;
-  padding-right: 17px;
+  padding-left: 15px;
+  padding-right: 15px;
 
   &:nth-child(1) {
     display: block;
+
+    @media (min-width: 660px) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
 
@@ -33,6 +38,13 @@
   text-align: center;
   font-weight: bold;
   letter-spacing: 0.04em;
+
+  @media (min-width: 660px) {
+    margin-bottom: 0;
+    order: 2;
+
+    font-size: 20px;
+  }
 }
 
 .reviews__quote {
@@ -40,5 +52,26 @@
 
   font-size: 14px;
   line-height: 30px;
+  color: #283645;
   text-align: center;
+
+  @media (min-width: 660px) {
+    order: 1;
+    margin-bottom: 48px;
+
+    font-size: 18px;
+  }
+}
+
+.reviews__author-info {
+  display: none;
+
+  @media (min-width: 660px) {
+    display: block;
+
+    font-weight: normal;
+    color: #283645;
+    font-size: 14px;
+    line-height: 30px;
+  }
 }

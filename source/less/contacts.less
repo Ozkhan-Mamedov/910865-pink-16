@@ -12,7 +12,16 @@
 
   font-size: 24px;
   line-height: 29px;
+  color: #283645;
   text-align: center;
+
+  @media (min-width: 660px) {
+    padding-left: 80px;
+    padding-right: 80px;
+
+    font-size: 40px;
+    line-height: 48px;
+  }
 }
 
 .contacts__item {
@@ -25,6 +34,12 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  @media (min-width: 660px) {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 60px;
+  }
 }
 
 .contacts__item-header {
@@ -33,6 +48,7 @@
 
   font-size: 18px;
   line-height: 20px;
+  color: #283645;
   font-weight: bold;
   letter-spacing: 0.04em;
 }
@@ -53,5 +69,13 @@
     opacity: 0.3;
 
     border-bottom: none;
+  }
+}
+
+.contacts__item-wrapper {
+  @media (min-width: 660px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
