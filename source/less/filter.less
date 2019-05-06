@@ -5,6 +5,14 @@
   padding-right: 20px;
 
   background-color: #f2f2f2;
+
+  @media (min-width: 660px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 57px;
+    padding-bottom: 54px;
+  }
 }
 
 .filter__image {
@@ -24,6 +32,13 @@
   width: 100%;
   padding-top: 133.57%;
   margin-bottom: 42px;
+
+  @media (min-width: 660px) {
+    margin-bottom: 0;
+    padding-top: 0;
+    width: 300px;
+    height: 400px;
+  }
 }
 
 .filter__controls {
@@ -34,6 +49,10 @@
   text-align: center;
 
   border-bottom: 1px solid #dddfe0;
+
+  @media (min-width: 660px) {
+    border: none;
+  }
 }
 
 .filter__post-button {
@@ -58,6 +77,10 @@
 
   &:active {
     color: #e06989;
+  }
+
+  @media (min-width: 660px) {
+    margin-bottom: 24px;
   }
 }
 
@@ -92,6 +115,11 @@
   position: relative;
 
   margin-top: 40px;
+
+  @media (min-width: 660px) {
+    display: none;
+    margin-top: 0;
+  }
 }
 
 .filter__range-bar {
@@ -101,6 +129,11 @@
   margin-bottom: 34px;
 
   border-top: 2px solid #283645;
+
+  @media (min-width: 660px) {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
 }
 
 .filter__range-toggle {
@@ -132,14 +165,40 @@
 .filter__controls-label {
   font-size: 0;
 
+  @media (min-width: 660px) {
+    position: relative;
+
+    width: 24px;
+    height: 22px;
+  }
+
   & svg {
     fill: #283645;
     opacity: 0.3;
+
+    @media (min-width: 660px) {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+
+      transform: translate(-50%, -50%);
+
+      fill: #d22856;
+      opacity: 1;
+    }
   }
 
   & svg:hover {
     opacity: 0.5;
+
+    @media (min-width: 660px) {
+      opacity: 1;
+    }
   }
+}
+
+.filter__item:last-child path {
+  fill: inherit;
 }
 
 .filter__type-list {
@@ -153,11 +212,21 @@
   margin-bottom: 83px;
 
   list-style: none;
+
+  @media (min-width: 660px) {
+    flex-direction: column;
+    padding: 0;
+    margin-bottom: 67px;
+  }
 }
 
 .filter__controls-type:focus + label svg {
   outline: -webkit-focus-ring-color auto 5px;
   opacity: 0.5;
+
+  @media (min-width: 660px) {
+    opacity: 1;
+  }
 }
 
 .filter__controls--active:focus + label svg {
@@ -170,5 +239,33 @@
 
   &:hover {
     opacity: 1;
+  }
+}
+
+.filter__item {
+  @media (min-width: 660px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 24px;
+    padding-top: 26px;
+
+    border-bottom: 1px solid #dddfe0;
+  }
+}
+
+.filter__item .filter__range-controls {
+  display: none;
+
+  @media (min-width: 660px) {
+    display: flex;
+    width: 100%;
+  }
+}
+
+.filter__controls-wrapper {
+  @media (min-width: 660px) {
+    width: 44.35%;
   }
 }
