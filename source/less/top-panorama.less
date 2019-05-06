@@ -4,6 +4,10 @@
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: 660px) {
+    margin-bottom: 50px;
+  }
 }
 
 .top-panorama__label {
@@ -23,6 +27,10 @@
   text-transform: uppercase;
 
   background-color: #d22856;
+
+  @media (min-width: 660px) {
+    top: 11.19%;
+  }
 }
 
 .top-panorama__content {
@@ -36,6 +44,12 @@
   font-size: 14px;
   line-height: 24px;
   color: #283645;
+
+  @media (min-width: 660px) {
+    margin-bottom: 0;
+
+    order: 3;
+  }
 }
 
 .top-panorama__likes {
@@ -44,6 +58,12 @@
   font-size: 12px;
   color: #d22856;
   text-transform: uppercase;
+
+  @media (min-width: 660px) {
+    margin-left: auto;
+
+    order: 2;
+  }
 }
 
 .top-panorama__image-wrapper {
@@ -51,6 +71,10 @@
 
   width: 100%;
   padding-top: 42.81%;
+
+  @media (min-width: 660px) {
+    padding-top: 77.12%;
+  }
 }
 
 .top-panorama__image {
@@ -93,6 +117,17 @@
   margin-right: 20px;
 
   background-color: #f2f2f2;
+
+  @media (min-width: 660px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.top-panorama__header {
+  @media (min-width: 660px) {
+    order: 1;
+  }
 }
 
 .top-panorama__like-button {
@@ -101,4 +136,9 @@
 
   border: none;
   background-color: #f2f2f2;
+
+  @media (min-width: 660px) {
+    margin-right: 0;
+    margin-left: 19px;
+  }
 }
