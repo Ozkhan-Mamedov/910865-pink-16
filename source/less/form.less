@@ -8,15 +8,18 @@
 }
 
 .form__submit {
+  padding-top: 43px;
+  padding-bottom: 20px;
+
   text-align: center;
 
   &-button {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 48px;
-    padding-right: 48px;
-    margin-bottom: 45px;
-    width: 282px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    padding-left: 46px;
+    padding-right: 46px;
+    margin-bottom: 40px;
+    width: 280px;
 
     font-size: 18px;
     font-weight: bold;
@@ -51,6 +54,8 @@
 
     font-size: 14px;
     color: #283645;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
   }
 
   &-description-star {
@@ -69,7 +74,7 @@
 .form__field {
   padding: 0;
   margin: 0;
-  padding-top: 42px;
+  padding-top: 39px;
   padding-bottom: 42px;
 
   border: 0;
@@ -91,11 +96,16 @@
   }
 
   &--achievments {
+    padding-top: 46px;
+    padding-bottom: 50px;
+
     @media (min-width: 660px) {
       order: 4;
     }
 
     & .form__header {
+      padding-top: 38px;
+
       @media (min-width: 660px) {
         padding-left: 32px;
         padding-right: 32px;
@@ -112,6 +122,8 @@
   }
 
   &--contacts {
+    padding-top: 37px;
+
     @media (min-width: 660px) {
       order: 3;
     }
@@ -160,19 +172,32 @@
   }
 
   &--platform {
+    padding-top: 42px;
+    padding-bottom: 50px;
+
     @media (min-width: 660px) {
       order: 2;
     }
 
     & .form__header {
+      padding-top: 38px;
+
       @media (min-width: 660px) {
         padding-left: 26px;
         padding-right: 26px;
       }
     }
+
+    & .form__item {
+      margin-bottom: 51px;
+    }
   }
 
   &--review {
+    padding-top: 16px;
+    //padding-bottom: 43px;
+    padding-bottom: 0;
+
     @media (min-width: 660px) {
       padding-bottom: 51px;
       padding-top: 45px;
@@ -183,6 +208,8 @@
     }
 
     & .form__header {
+      padding-top: 38px;
+
       @media (min-width: 660px) {
         padding-left: 39px;
         padding-right: 39px;
@@ -230,7 +257,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 28px;
+  margin-bottom: 22px;
 
   &--name {
     @media (min-width: 660px) {
@@ -246,6 +273,7 @@
     width: 280px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 58px;
   }
 
   &:last-child {
@@ -254,11 +282,15 @@
 
   &-label-text {
     display: block;
-    margin-bottom: 15px;
+    padding-left: 44px;
+    margin-bottom: 11px;
+    width: 100%;
 
     font-size: 14px;
     color: #d22856;
+    text-align: left;
     text-transform: uppercase;
+    letter-spacing: 0.03em;
   }
 
   &-label-text--name {
@@ -270,12 +302,13 @@
 
   &-input-text {
     padding-left: 20px;
-    padding-top: 23px;
-    padding-bottom: 23px;
-    padding-right: 84px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-right: 20px;
     width: 100%;
 
     font-size: 18px;
+    letter-spacing: 0.02em;
 
     border: 2px solid #e7e7e7;
     border-radius: 2px;
@@ -300,6 +333,7 @@
 
     font-size: 18px;
     color: #283645;
+    letter-spacing: 0.02em;
 
     &--checkbox {
       &::before {
@@ -315,7 +349,7 @@
 
     &::before {
       position: absolute;
-      top: -8px;
+      top: -7px;
       left: 0;
 
       width: 35px;
@@ -373,6 +407,7 @@
   font-size: 14px;
   line-height: 18px;
   text-align: center;
+  letter-spacing: 0.02em;
   color: #d22856;
   text-transform: uppercase;
 
@@ -403,17 +438,18 @@
 .form__textarea {
   padding: 0;
   margin: 0;
-  padding-top: 22px;
-  padding-left: 20px;
-  padding-bottom: 22px;
+  padding-top: 15px;
+  padding-left: 19px;
+  padding-bottom: 15px;
   padding-right: 20px;
   //width: 237px;
   width: 100%;
-  min-height: 155px;
+  min-height: 201px;
 
   font-size: 18px;
   line-height: 30px;
   color: #283645;
+  letter-spacing: 0.02em;
 
   border: 2px solid #e5e5e5;
   border-radius: 2px;

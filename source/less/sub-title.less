@@ -1,13 +1,14 @@
 .sub-title {
   margin: 0;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 57px;
-  padding-bottom: 60px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 45px;
+  padding-bottom: 50px;
 
   font-size: 14px;
   line-height: 30px;
   text-align: center;
+  letter-spacing: 0.02em;
 
   @media (min-width: 660px) {
     padding-left: 65px;
@@ -23,13 +24,20 @@
       padding-top: 55px;
       padding-bottom: 55px;
     }
-
   }
 
   &--form {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0;
+
     @media (min-width: 660px) {
       padding-top: 101px;
       padding-bottom: 33px;
     }
+  }
+
+  &__description {
+    display: none;
   }
 }
