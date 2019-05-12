@@ -4,6 +4,11 @@
   align-items: center;
   padding-bottom: 43px;
   padding-top: 43px;
+
+  @media (min-width: 660px) {
+    padding-top: 32px;
+    padding-bottom: 21px;
+  }
 }
 
 .reviews__list {
@@ -12,6 +17,10 @@
   margin-bottom: 33px;
 
   list-style: none;
+
+  @media (min-width: 660px) {
+    margin-bottom: 35px;
+  }
 }
 
 .reviews__item {
@@ -44,6 +53,7 @@
     order: 2;
 
     font-size: 20px;
+    line-height: 33px;
   }
 }
 
@@ -58,7 +68,7 @@
 
   @media (min-width: 660px) {
     order: 1;
-    margin-bottom: 48px;
+    margin-bottom: 33px;
 
     font-size: 18px;
   }
@@ -74,5 +84,6 @@
     color: #283645;
     font-size: 14px;
     line-height: 30px;
+    letter-spacing: 0.02em;
   }
 }
