@@ -11,7 +11,7 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 57px;
-    padding-bottom: 54px;
+    padding-bottom: 52px;
   }
 }
 
@@ -51,6 +51,8 @@
   border-bottom: 1px solid #dddfe0;
 
   @media (min-width: 660px) {
+    margin-bottom: 66px;
+
     border: none;
   }
 }
@@ -64,6 +66,7 @@
   font-size: 18px;
   color: #d22856;
   letter-spacing: 0.1em;
+  font-weight: bold;
 
   border: 3px solid #d22856;
   border-radius: 30px;
@@ -82,6 +85,9 @@
 
   @media (min-width: 660px) {
     margin-bottom: 24px;
+    width: 262px;
+    padding-top: 14px;
+    padding-bottom: 16px;
   }
 }
 
@@ -93,6 +99,7 @@
   font-size: 18px;
   color: #e3e4e4;
   letter-spacing: 0.1em;
+  font-weight: bold;
 
   border: 3px solid #dddfe0;
   border-radius: 30px;
@@ -110,6 +117,10 @@
     color: #cbced2;
 
     background-color: #b5b9be;
+  }
+
+  @media (min-width: 660px) {
+    width: 262px;
   }
 }
 
@@ -133,8 +144,10 @@
   border-top: 2px solid #283645;
 
   @media (min-width: 660px) {
-    margin-right: 0;
+    //margin-right: 0;
     margin-bottom: 0;
+    margin-left: 30px;
+    width: 202px;
   }
 }
 
@@ -161,6 +174,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: 660px) {
+    align-items: flex-start;
+  }
 }
 
 .filter__controls-label {
@@ -219,7 +236,8 @@
   @media (min-width: 660px) {
     flex-direction: column;
     padding: 0;
-    margin-bottom: 67px;
+    padding-left: 3px;
+    //margin-bottom: 67px;
   }
 }
 
@@ -255,6 +273,65 @@
     padding-top: 26px;
 
     border-bottom: 1px solid #dddfe0;
+  }
+
+  &:nth-child(1) {
+    & svg {
+      @media (min-width: 660px) {
+        width: 22px;
+        height: 22px;
+      }
+    }
+
+    & .filter__range-toggle {
+      @media (min-width: 660px) {
+        right: 23.78%;
+      }
+    }
+
+    @media (min-width: 660px) {
+      padding-top: 9px;
+    }
+  }
+
+  &:nth-child(2) {
+    & svg {
+      @media (min-width: 660px) {
+        top: 13px;
+
+        width: 24px;
+        height: 22px;
+      }
+    }
+
+    & .filter__range-toggle {
+      @media (min-width: 660px) {
+        left: 22%;
+      }
+    }
+
+    @media (min-width: 660px) {
+      padding-top: 26px;
+    }
+  }
+
+  &:nth-child(3) {
+    & svg {
+      @media (min-width: 660px) {
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    & .filter__range-toggle {
+      @media (min-width: 660px) {
+        left: 50%;
+      }
+    }
+
+    @media (min-width: 660px) {
+      padding-top: 23px;
+    }
   }
 }
 

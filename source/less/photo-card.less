@@ -22,6 +22,10 @@
   line-height: 24px;
   color: #283645;
   letter-spacing: 0.02em;
+
+  @media (min-width: 660px) {
+    margin-bottom: 0;
+  }
 }
 
 .photo-card__likes {
@@ -36,6 +40,8 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     margin-top: auto;
+
+    letter-spacing: 0.03em;
   }
 }
 
@@ -54,7 +60,7 @@
   display: inline-block;
   vertical-align: top;
 
-  font-size: 14px;
+  font-size: 13px;
   line-height: 24px;
   color: #283645;
 }
@@ -94,7 +100,11 @@
   @media (min-width: 660px) {
     display: flex;
     flex-direction: column;
-    height: 112px;
+    height: 105px;
+    padding-top: 24px;
+    padding-left: 27px;
+    padding-right: 32px;
+    padding-bottom: 26px;
   }
 }
 
