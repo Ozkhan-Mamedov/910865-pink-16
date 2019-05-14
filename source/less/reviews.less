@@ -9,6 +9,11 @@
     padding-top: 32px;
     padding-bottom: 21px;
   }
+
+  @media (min-width: 960px) {
+    padding-top: 186px;
+    padding-bottom: 0px;
+  }
 }
 
 .reviews__list {
@@ -18,8 +23,29 @@
 
   list-style: none;
 
+  &::before {
+    @media (min-width: 960px) {
+      position: absolute;
+      top: -114px;
+      left: 47%;
+
+      width: 79px;
+      height: 63px;
+
+      background: url(../source/img/icon-quotes.svg) no-repeat;
+
+      content: "";
+    }
+  }
+
   @media (min-width: 660px) {
     margin-bottom: 35px;
+  }
+
+  @media (min-width: 960px) {
+    position: relative;
+
+    margin-bottom: 33px;
   }
 }
 
@@ -35,6 +61,41 @@
       display: flex;
       flex-direction: column;
     }
+  }
+
+  &::before {
+    @media (min-width: 960px) {
+      position: absolute;
+      top: 28px;
+      left: 130px;
+
+      width: 22px;
+      height: 41px;
+
+      background: url(../source/img/icon-review-arrow-left.svg) no-repeat;
+
+      content: "";
+    }
+  }
+
+  &::after {
+    @media (min-width: 960px) {
+      position: absolute;
+      top: 28px;
+      right: 130px;
+
+      width: 22px;
+      height: 41px;
+
+      background: url(../source/img/icon-review-arrow-right.svg) no-repeat;
+
+      content: "";
+    }
+  }
+
+  @media (min-width: 960px) {
+    padding-left: 240px;
+    padding-right: 240px;
   }
 }
 
@@ -55,6 +116,11 @@
     font-size: 20px;
     line-height: 33px;
   }
+
+  @media (min-width: 960px) {
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 
 .reviews__quote {
@@ -72,6 +138,10 @@
 
     font-size: 18px;
   }
+
+  @media (min-width: 960px) {
+    margin-bottom: 36px;
+  }
 }
 
 .reviews__author-info {
@@ -85,5 +155,10 @@
     font-size: 14px;
     line-height: 30px;
     letter-spacing: 0.02em;
+  }
+
+  @media (min-width: 960px) {
+    font-size: 18px;
+    line-height: 34px;
   }
 }

@@ -147,35 +147,48 @@
 
     & .form__item {
       @media (min-width: 660px) {
+        position: relative;
+
         display: flex;
         flex-direction: column-reverse;
         margin-bottom: 35px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 81%;
+      }
+
+      &::after {
+        @media (min-width: 660px) {
+          position: absolute;
+          top: 0px;
+          right: -2px;
+
+          width: 57px;
+          height: 59px;
+
+          background-color: #e5e5e5;
+          border: 2px solid #e5e5e5;
+
+          content: "";
+        }
       }
 
       & .form__item-label-text {
         @media (min-width: 660px) {
           margin-bottom: 0;
+          width: 100%;
+          padding-left: 39px;
+
+          text-align: left;
+          letter-spacing: 0.02em;
         }
       }
 
       & .form__item-input-text {
         @media (min-width: 660px) {
           margin-bottom: 15px;
-          width: 70.77%;
-        }
-
-        //не отображается псевдоэлемент
-
-        &::after {
-          @media (min-width: 660px) {
-            position: absolute;
-            right: 0;
-
-            width: 60px;
-            height: 61px;
-
-            content: "";
-          }
+          margin-right: auto;
+          width: 88%;
         }
       }
     }
