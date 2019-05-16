@@ -1,5 +1,9 @@
 .main-navigation {
   background-color: #283645;
+
+  @media (min-width: 960px) {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .main-navigation__logo-button-container {
@@ -17,6 +21,16 @@
     padding-top: 44px;
     padding-bottom: 41px;
   }
+
+  @media (min-width: 960px) {
+    position: relative;
+
+    padding-bottom: 44px;
+    padding-left: 130px;
+    padding-right: 130px;
+
+    border-bottom: none;
+  }
 }
 
 .main-navigation__link {
@@ -30,6 +44,14 @@
   padding: 0;
 
   list-style: none;
+
+  @media (min-width: 960px) {
+    position: absolute;
+    left: 449px;
+    top: 38px;
+
+    display: flex;
+  }
 }
 
 .main-navigation__menu-toggle {
@@ -48,5 +70,9 @@
     opacity: 0.3;
 
     fill: #d22856;
+  }
+
+  @media (min-width: 960px) {
+    display: none;
   }
 }
