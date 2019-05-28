@@ -1,14 +1,9 @@
 .tariff {
-  //position: relative;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 90px;
   padding-bottom: 47px;
-  //padding-top: 110px;
-  //padding-bottom: 380px;
-  //height: 375px;
 
   background: url("../img/bg-triangle-white.svg") no-repeat;
   background-size: 100%;
@@ -16,18 +11,31 @@
   background-color: #f2f2f2;
 
   overflow: hidden;
+
+  @media (min-width: 660px) {
+    padding-top: 88px;
+    padding-bottom: 16px;
+  }
+
+  @media (min-width: 960px) {
+    padding-top: 154px;
+    padding-bottom: 95px;
+  }
 }
 
 .tariff__table {
-  //position: absolute;
-  //left: -258px;
-  //left: 50%;
-
   margin-bottom: 40px;
 
   border-collapse: collapse;
 
-  //transform: translateX(-50%);
+  @media (min-width: 660px) {
+    width: 93.93%;
+  }
+
+  @media (min-width: 960px) {
+    width: 78.3%;
+    margin-bottom: 0;
+  }
 }
 
 .tariff__option,
@@ -38,11 +46,11 @@
 .tariff__option {
   position: relative;
 
-  padding-left: 10px;
+  padding-left: 11px;
   padding-right: 10px;
   padding-top: 22px;
-  padding-bottom: 25px;
-  width: 256px;
+  padding-bottom: 22px;
+  min-width: 239px;
 
   color: #ffffff;
   font-size: 18px;
@@ -54,50 +62,173 @@
   border-bottom-color: #283645;
   border-bottom-width: 2px;
 
-  &:nth-child(1) {
+  &:nth-child(2) {
     border-left-color: #283645;
   }
 
-  &:nth-child(3) {
+  &:nth-child(4) {
     border-right-color: #283645;
+  }
+
+  &:first-child {
+    display: none;
+
+    @media (min-width: 660px) {
+      display: inherit;
+      //min-width: 154px;
+    }
+  }
+
+  @media (min-width: 660px) {
+    //min-width: 152px;
+    //min-width: 25%;
+    min-width: 123px;
+    padding-right: 11px;
+    padding-top: 17px;
+    padding-bottom: 13px;
+
+    font-size: 16px;
+  }
+
+  @media (min-width: 960px) {
+    min-width: 200px;
+    padding-top: 21px;
+    padding-bottom: 18px;
   }
 }
 
 .tariff__price {
   display: block;
-  //width: 112px;
   margin-top: 12px;
 
   font-size: 24px;
   font-weight: normal;
+
+  @media (min-width: 660px) {
+    margin-top: 7px;
+
+    font-size: 18px;
+  }
+
+  @media (min-width: 960px) {
+    margin-top: 7px;
+
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 
 .tariff__availability {
   position: relative;
 
-  padding-left: 19px;
-  padding-top: 12px;
+  padding-left: 21px;
+  padding-top: 15px;
   padding-right: 16px;
-  padding-bottom: 12px;
+  padding-bottom: 14px;
+  min-width: 239px;
 
   background-color: #ffffff;
+
+  &:first-child {
+    display: none;
+
+    @media (min-width: 660px) {
+      display: table-cell;
+      //min-width: 154px;
+      //min-width: 25%;
+      min-width: 114px;
+    }
+
+    @media (min-width: 960px) {
+      min-width: 201px;
+      padding-left: 22px;
+      padding-top: 14px;
+      padding-right: 10px;
+      padding-bottom: 13px;
+    }
+  }
+
+  @media (min-width: 660px) {
+    //min-width: 152px;
+    min-width: 112px;
+    padding-left: 16px;
+    padding-top: 6px;
+    padding-right: 17px;
+    padding-bottom: 7px;
+    //min-width: 25%;
+  }
+
+  @media (min-width: 960px) {
+    min-width: 200px;
+    padding-left: 22px;
+    padding-top: 14px;
+    padding-right: 10px;
+    padding-bottom: 13px;
+  }
 }
 
 .tariff__features {
   font-size: 14px;
   line-height: 30px;
+  letter-spacing: 0.03em;
 
   text-transform: uppercase;
+
+  &--addition {
+    @media (min-width: 660px) {
+      font-size: 14px;
+      text-transform: none;
+    }
+
+    @media (min-width: 960px) {
+      font-size: 18px;
+      line-height: 29px;
+    }
+  }
+}
+
+.tariff__features:not(.tariff__features--addition) {
+  @media (min-width: 660px) {
+    font-size: 0;
+  }
 }
 
 .tariff__image-yes {
   position: absolute;
   right: 17px;
-  top: 17px;
+  top: 20px;
+
+  @media (min-width: 660px) {
+    left: 50%;
+    top: 13px;
+
+    transform: translateX(-50%);
+  }
+
+  @media (min-width: 960px) {
+    top: 22px;
+  }
 }
 
 .tariff__image-no {
   position: absolute;
   right: 19px;
   top: 15px;
+
+  @media (min-width: 660px) {
+    left: 50%;
+    top: 9px;
+
+    transform: translateX(-50%);
+  }
+
+  @media (min-width: 960px) {
+    top: 16px;
+  }
+}
+
+.tariff .selector {
+  @media (min-width: 660px) {
+    visibility: hidden;
+  }
 }

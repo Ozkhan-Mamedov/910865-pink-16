@@ -1,10 +1,30 @@
 .photo-card {
-  /*width: 280px;
-  margin-left: auto;
-  margin-right: auto;*/
   padding-left: 20px;
   padding-right: 20px;
   margin-bottom: 20px;
+
+  @media (min-width: 660px) {
+    //margin-left: 20px;
+    padding: 0;
+    width: 48.45%;
+  }
+
+  @media (min-width: 960px) {
+    width: 32%;
+    margin-bottom: 52px;
+  }
+
+  /*&:nth-child(3n+2) {
+    @media (min-width: 960px) {
+      margin-left: 130px;
+    }
+  }*/
+
+  &:nth-last-child(-n+3) {
+    @media (min-width: 960px) {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .photo-card:last-child {
@@ -13,11 +33,16 @@
 
 .photo-card__comment {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 13px;
 
   font-size: 14px;
   line-height: 24px;
   color: #283645;
+  letter-spacing: 0.02em;
+
+  @media (min-width: 660px) {
+    margin-bottom: 0;
+  }
 }
 
 .photo-card__likes {
@@ -26,6 +51,15 @@
   font-size: 12px;
   color: #d22856;
   text-transform: uppercase;
+
+  @media (min-width: 660px) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: auto;
+
+    letter-spacing: 0.03em;
+  }
 }
 
 .photo-card__name {
@@ -43,7 +77,7 @@
   display: inline-block;
   vertical-align: top;
 
-  font-size: 14px;
+  font-size: 13px;
   line-height: 24px;
   color: #283645;
 }
@@ -54,7 +88,6 @@
   left: 50%;
 
   width: 100%;
-  /* height: auto; */
   height: 100%;
 
   transform: translate(-50%, -50%);
@@ -65,25 +98,45 @@
 
   width: 100%;
   padding-top: 64.28%;
+
+  @media (min-width: 660px) {
+    padding-top: 100%;
+  }
+
+  @media (min-width: 960px) {
+    padding-top: 133.33%;
+  }
 }
 
 .photo-card__info {
-  padding-top: 25px;
+  padding-top: 18px;
   padding-left: 18px;
   padding-right: 23px;
-  padding-bottom: 26px;
+  padding-bottom: 24px;
   margin-left: auto;
   margin-right: auto;
-  //width: 240px;
-  //width: 87.5%;
 
   background-color: #f2f2f2;
+
+  @media (min-width: 660px) {
+    display: flex;
+    flex-direction: column;
+    height: 105px;
+    padding-top: 24px;
+    padding-left: 27px;
+    padding-right: 32px;
+    padding-bottom: 26px;
+  }
 }
 
 .photo-card__like-button {
   padding: 0;
-  margin-right: 19px;
+  margin-right: 16px;
 
   border: none;
   background-color: #f2f2f2;
+
+  @media (min-width: 660px) {
+    margin-right: 0;
+  }
 }

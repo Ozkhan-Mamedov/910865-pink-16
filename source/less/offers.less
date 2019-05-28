@@ -2,12 +2,14 @@
   position: relative;
 
   padding-top: 41px;
-  /*padding-bottom: 282px;
 
-  background: url("../img/bg-triangle-white.svg") no-repeat, url("../img/iphone-screen-mobile@1x.png") no-repeat;
-  background-size: 235%, 157px 320px;
-  background-position: 0 185px, 50% calc(100% - -42px);
-  background-color: #f2f2f2;*/
+  @media (min-width: 660px) {
+    padding-top: 49px;
+  }
+
+  @media (min-width: 960px) {
+    padding-top: 67px;
+  }
 }
 
 .offers__subject {
@@ -21,10 +23,38 @@
   color: #283645;
 
   background-color: #ffffff;
+
+  @media (min-width: 660px) {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  @media (min-width: 960px) {
+    font-size: 50px;
+    line-height: 60px;
+  }
 }
 
 .offers__subject:nth-child(1) {
-  //padding-bottom: 29px;
-  //padding-top: 41px;
   margin-bottom: 29px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media (min-width: 660px) {
+    margin-bottom: 0;
+  }
+}
+
+.offers__subject:nth-child(2) {
+  margin-bottom: 34px;
+
+  @media (min-width: 660px) {
+    margin-bottom: 47px;
+  }
+
+  @media (min-width: 960px) {
+    padding-left: 270px;
+    padding-right: 270px;
+    margin-bottom: 78px;
+  }
 }

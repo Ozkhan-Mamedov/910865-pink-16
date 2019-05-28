@@ -8,6 +8,21 @@
 
   border-top: 1px solid #485461;
   border-bottom: 1px solid #000000;
+
+  @media (min-width: 960px) {
+    padding: 0;
+
+    margin-right: 83px;
+
+    border-bottom: none;
+    border-top: none;
+  }
+
+  &:last-child {
+    @media (min-width: 960px) {
+      margin-right: 0;
+    }
+  }
 }
 
 .header-list__item a {
@@ -16,6 +31,7 @@
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
+  font-weight: bold;
 
   &:hover,
   &:focus {
@@ -29,5 +45,11 @@
 
     opacity: 0.3;
     cursor: pointer;
+  }
+
+  @media (min-width: 960px) {
+    text-transform: none;
+    font-weight: normal;
+    letter-spacing: 0.01em;
   }
 }

@@ -1,8 +1,45 @@
 .index-background {
-  height: 395px;
+  position: relative;
 
-  background: url("../img/iphone-hand-mobile@1x.png") no-repeat, url("../img/bg-back-mobile@1x.jpg") no-repeat;
-  background-size: 258px 287px, cover;
-  //background-position: bottom left;
+  height: 396px;
+
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
+  background-size: cover;
   background-position: 0 100%;
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+
+    width: 258px;
+    height: 287px;
+
+    background: url("../img/iphone-hand-mobile@1x.png") no-repeat;
+
+    transform: translateX(-50%);
+
+    content: "";
+
+    @media (min-width: 660px) {
+      left: 61.45%;
+
+      width: 469px;
+      height: 520px;
+
+      background-size: contain;
+      background-position: 50% 50%;
+    }
+  }
+
+  @media (min-width: 660px) {
+    height: 618px;
+
+    //background-position: 0px 55%;
+  }
+
+  @media (min-width: 960px) {
+    //height: 743px;
+    height: 853px;
+  }
 }

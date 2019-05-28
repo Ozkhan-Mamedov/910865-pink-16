@@ -4,6 +4,11 @@
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
+
+  @media (min-width: 660px) {
+    margin-bottom: 50px;
+  }
 }
 
 .top-panorama__label {
@@ -13,20 +18,28 @@
 
   display: block;
   width: 100px;
-  padding-top: 11px;
-  padding-bottom: 11px;
+  padding-top: 8px;
+  padding-bottom: 9px;
   padding-left: 20px;
   padding-right: 20px;
 
   font-size: 12px;
   color: #ffffff;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
 
   background-color: #d22856;
-}
 
-.top-panorama__header {
-  //если надо убрать пробел между инлайн блоками font-size: 0;
+  @media (min-width: 660px) {
+    top: 9%;
+  }
+
+  @media (min-width: 960px) {
+    right: 130px;
+
+    padding-top: 9px;
+    padding-bottom: 10px;
+  }
 }
 
 .top-panorama__content {
@@ -35,11 +48,19 @@
 
 .top-panorama__comment {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
+  width: 100%;
 
   font-size: 14px;
   line-height: 24px;
   color: #283645;
+  letter-spacing: 0.017em;
+
+  @media (min-width: 660px) {
+    margin-bottom: 0;
+
+    order: 3;
+  }
 }
 
 .top-panorama__likes {
@@ -48,6 +69,14 @@
   font-size: 12px;
   color: #d22856;
   text-transform: uppercase;
+
+  @media (min-width: 660px) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-left: auto;
+    order: 2;
+  }
 }
 
 .top-panorama__image-wrapper {
@@ -55,6 +84,14 @@
 
   width: 100%;
   padding-top: 42.81%;
+
+  @media (min-width: 660px) {
+    padding-top: 77.12%;
+  }
+
+  @media (min-width: 960px) {
+    padding-top: 42.16%;
+  }
 }
 
 .top-panorama__image {
@@ -63,7 +100,6 @@
   left: 50%;
 
   width: 100%;
-  /* height: auto; */
   height: 100%;
 
   transform: translate(-50%, -50%);
@@ -90,22 +126,48 @@
 }
 
 .top-panorama__info {
-  padding-top: 25px;
+  padding-top: 17px;
   padding-left: 18px;
   padding-right: 23px;
-  padding-bottom: 26px;
+  padding-bottom: 22px;
   margin-left: 20px;
   margin-right: 20px;
-  //width: 240px;
-  //width: 87.5%;
 
   background-color: #f2f2f2;
+
+  @media (min-width: 660px) {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 23px;
+    padding-left: 27px;
+    padding-right: 29px;
+    padding-bottom: 25px;
+  }
+
+  @media (min-width: 960px) {
+    padding-top: 25px;
+    padding-right: 31px;
+    padding-bottom: 23px;
+    margin-left: 130px;
+    margin-right: 130px;
+  }
+}
+
+.top-panorama__header {
+  @media (min-width: 660px) {
+    order: 1;
+  }
 }
 
 .top-panorama__like-button {
   padding: 0;
-  margin-right: 19px;
+  margin-right: 16px;
 
   border: none;
   background-color: #f2f2f2;
+
+  @media (min-width: 660px) {
+    margin-right: 0;
+    margin-left: 20px;
+  }
 }

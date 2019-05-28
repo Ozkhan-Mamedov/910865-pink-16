@@ -1,15 +1,22 @@
 .footer-copy {
   margin: 0;
+  padding-top: 7px;
 
   font-size: 14px;
   color: #283645;
   text-align: center;
+  letter-spacing: 0.02em;
+
+  @media (min-width: 960px) {
+    font-size: 18px;
+  }
 }
 
 .footer-copy__logo-container {
   display: inline-block;
   vertical-align: middle;
-  margin-left: 18px;
+  //margin-left: 14px;
+  margin-left: 7px;
 
   font-size: 0;
 
@@ -20,5 +27,9 @@
 
   &:active svg {
     opacity: 0.3;
+  }
+
+  @media (min-width: 960px) {
+    margin-left: 4px;
   }
 }
