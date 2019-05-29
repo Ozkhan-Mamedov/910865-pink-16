@@ -63,7 +63,36 @@
     }
   }
 
-  &::before {
+  .reviews__button {
+    position: absolute;
+    top: 28px;
+
+    display: none;
+    width: 22px;
+    height: 41px;
+
+    border: none;
+
+    content: "";
+
+    &--left {
+      left: 130px;
+
+      background: url(../img/icon-review-arrow-left.svg) no-repeat;
+    }
+
+    &--right {
+      right: 130px;
+
+      background: url(../img/icon-review-arrow-right.svg) no-repeat;
+    }
+
+    @media (min-width: 960px) {
+      display: block;
+    }
+  }
+
+  /*&::before {
     @media (min-width: 960px) {
       position: absolute;
       top: 28px;
@@ -76,9 +105,9 @@
 
       content: "";
     }
-  }
+  }*/
 
-  &::after {
+  /*&::after {
     @media (min-width: 960px) {
       position: absolute;
       top: 28px;
@@ -91,7 +120,7 @@
 
       content: "";
     }
-  }
+  }*/
 
   @media (min-width: 960px) {
     padding-left: 240px;

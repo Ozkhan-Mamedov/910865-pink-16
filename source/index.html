@@ -10,7 +10,11 @@
       <nav class="main-navigation">
         <div class="main-navigation__logo-button-container">
           <a class="main-navigation__link" href="index.html">
-            <img class="main-navigation__image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img class="main-navigation__image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк">
+            </picture>
           </a>
           <button class="main-navigation__menu-toggle" type="button">
             <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
@@ -140,6 +144,7 @@
       <section class="reviews">
         <ul class="reviews__list">
           <li class="reviews__item">
+            <button class="reviews__button reviews__button--left" type="button"></button>
             <p class="reviews__name">
               Николай Петров
               <span class="reviews__author-info">25&nbsp;лет, водитель трамвая</span>
@@ -147,6 +152,7 @@
             <blockquote class="reviews__quote">
               &laquo;Это приложение перевернуло мой мир и&nbsp;позволило по-новому взглянуть на привычные серые вещи! А&nbsp;еще я познакомился со&nbsp;своей будущей женой в комментариях к&nbsp;выложенной фотографии!&raquo;
             </blockquote>
+            <button class="reviews__button reviews__button--right" type="button"></button>
           </li>
           <li class="reviews__item">
           </li>
