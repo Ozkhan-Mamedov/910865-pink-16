@@ -248,6 +248,18 @@
     }
 
     & .form__item {
+      &:first-child::after {
+        @media (min-width: 660px) {
+          background: url(../img/icon-phone.svg) no-repeat 45% 50% #e5e5e5;
+        }
+      }
+
+      &:last-child::after {
+        @media (min-width: 660px) {
+          background: url(../img/icon-mail.svg) no-repeat 45% 50% #e5e5e5;
+        }
+      }
+
       @media (min-width: 660px) {
         position: relative;
 
@@ -275,7 +287,7 @@
           width: 57px;
           height: 59px;
 
-          background-color: #e5e5e5;
+          //background-color: #e5e5e5;
           border: 2px solid #e5e5e5;
 
           content: "";
@@ -303,6 +315,9 @@
           margin-bottom: 15px;
           margin-right: auto;
           width: 88%;
+
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
         }
 
         @media (min-width: 960px) {
